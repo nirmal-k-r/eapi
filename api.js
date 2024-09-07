@@ -24,7 +24,7 @@ productRoutes.forEach((route, index) => {
 
 const start = async () => {
     try{
-        await api.listen(3000);
+        await api.listen('0.0.0.0',3000);
     } catch (err){
         console.log(err);
         process.exit(1);
